@@ -39,4 +39,11 @@ component {
 			systemOutput(arguments.keyList(),1,1);
 		}
 	}
+
+	function onRequestEnd (template){
+		var content = fileRead(template);
+		echo("<hr><h3>#template#</h3><pre>#htmleditformat(content)#</pre>");
+		if (listLast(template,"/\") != "index.cfm")
+			echo("<a href='./'>back</a>");
+	}
 } 
