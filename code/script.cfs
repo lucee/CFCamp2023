@@ -1,6 +1,2 @@
-
-
-
+dump(getCurrentTemplatePath());
 dump(now());
-
-

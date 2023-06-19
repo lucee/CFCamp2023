@@ -9,8 +9,8 @@
     result=internalRequest(
         template:path
         , method:"post"
-        , forms: {formkey:"Form Value"}
-        , urls: {urlkey:"URL Value"}
+        , forms: {formkey:"Form Value"}  // or query string (thus allowing passing multiple values for the same key)
+        , urls: {urlkey:"URL Value"}  // or query string
         , cookies: {cookiekey:"Cookie Value"}
         , headers: {headerkey:"Header Value","content-type":"text/plain"}
         , body: "Body send"
@@ -21,5 +21,6 @@
     echo(result.filecontent?:"");
     echo("<hr>");
     dump(result);
+    
     
 </cfscript>
