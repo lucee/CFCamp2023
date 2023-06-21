@@ -9,16 +9,17 @@
 			datasource:  "mysql"
 		}
 	);
-//abort;
+abort;
 	queryLazy(
 		sql:"show tables",
-		listener: function( arrRows ) {
-			dump(arrRows);
+		listener: function( rows ) {
+			dump(rows);
 		},
 		options:{
-			datasource:  "mysql",
-			returntype:"query",
 			blockfactor: 10
+			,datasource:  "mysql"
+			,returntype:"query"
+			//,columnKey:"Tables_in_test" // used for return type struct
 		}
 	);
 

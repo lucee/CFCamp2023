@@ -2,12 +2,16 @@
 listener={
 	before= function (caller,args) {
         dump(label:"before",var:arguments);
-        //args.sql="select title from tasks"
-        //return arguments;
+    	args.sql&=" where Tables_in_test<>'test'"
+        return arguments;
 	},
 	after= function (caller,args,result,meta) {
         dump(label:"after",var:arguments);
-        queryAddColumn(arguments.result,"whatever",[1,2,3]);
+		var colName="table_name_lower_case";
+		queryAddColumn(arguments.result,colName);
+		loop query=result {
+			result["table_name_lower_case"]=lCase(result["Tables_in_test"]);
+		}
 		return arguments;
 	}
 }
