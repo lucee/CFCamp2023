@@ -1,5 +1,5 @@
 <cfscript>
-    json = '{ id: [ 1, 2, 3, 4 ] }';
+    json = '{ id: [ 1, 2, 3, 4 ] };';
     try {
         dump(json);
         dump(deserializeJson(json));
