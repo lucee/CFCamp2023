@@ -1,0 +1,7 @@
+refSource = {
+    "/03-01-subcfc.cfm": [ "/SubCFC.cfc" ], 
+    "/01-03-java-cfc.cfm": [ "/Java.cfc" ], 
+    "/02-01-java-cfc2class.cfm": [ "/MyString.cfc" ], 
+    "/02-03-list-example.cfm": [ "/MyArrayList.cfc" ], 
+    
+}

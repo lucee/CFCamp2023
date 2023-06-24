@@ -1,0 +1,23 @@
+version: '3.0'
+services:
+  lucee:
+    image: lucee/lucee:6.0.0.477-SNAPSHOT
+    # image: lucee/lucee:6.0.0.477-SNAPSHOT-light
+    ports:
+      - 8888:8888
+    volumes:
+      - ./code/:/var/www
+      - ./password.txt:/opt/lucee/server/lucee-server/context/password.txt
+    environment:
+      - LUCEE_EXTENSIONS=465E1E35-2425-4F4E-8B3FAB638BD7280A
+  mysql: 
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    expose:
+      - 3306
+    environment:
+    - MYSQL_ROOT_PASSWORD=demopass
+    - MYSQL_DATABASE=test
+    
+  
