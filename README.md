@@ -18,3 +18,14 @@ docker-compose up
 
 And you can then access the server on http://localhost:8888
 
+## Developing the examples
+The examples are run in Application.cfc and use the inc/layout.cfm to render the page. 
+The examples can display a reference to another file by adding them in the `inc/refs.cfs` script file in the format:
+```
+    {
+        "/03-01-subcfc.cfm": [ 
+            "/SubCFC.cfc" 
+        ]
+    }
+```
+Where the key of the root structure is the current template path and the value is an array of the paths to the files that are referenced in the example.
