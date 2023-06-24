@@ -8,8 +8,8 @@ Under /code you can find the code example step by step.
 
 
 ## Running the examples
-You can run the examples in (Docker compose)[https://docs.docker.com/compose/] or (Commandbox)[https://www.ortussolutions.com/products/commandbox].
-We have provied a docker-compose.yml file that will start a Lucee 6 server. 
+You can run the examples in (Docker compose)[https://docs.docker.com/compose/]. We have provied a docker-compose.yml file that will start a Lucee 6 server and mysql for you. 
+
 You can start the server with the following command: 
 
 ```
