@@ -9,7 +9,8 @@
 			datasource:  "mysql"
 		}
 	);
-abort;
+	exit type="template";
+	
 	queryLazy(
 		sql:"show tables",
 		listener: function( rows ) {

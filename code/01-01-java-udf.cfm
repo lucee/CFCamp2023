@@ -7,28 +7,7 @@
 	i=echoInt(12);
 	dump(i);
 	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-	
-	abort;
+	exit type="template";
 	// Simply add the attribute [type=”java”] and you can write your Java code directly in your CFML template
 	java.lang.StringBuilder function createStringBuilder(String str) type="java" {
 		 java.lang.StringBuilder sb=new java.lang.StringBuilder();

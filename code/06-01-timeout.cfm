@@ -6,7 +6,8 @@
 
 
 <cfscript>
-    abort;
+    
+    exit type="template";
     timeout timespan=createTimespan(0, 0, 0, 0,100) onerror=function(cfcatch){
         dump(arguments);
         throw cfcatch;

@@ -9,12 +9,12 @@
 	dump(leftShift); // as you can see in the dump it gives a java.util.function.IntBinaryOperator Java Function
 	dump(leftShift(200,1));
 
-	abort; // step 2
+	exit type="template"; // step 2
 	
 
 	dump(test.handleJF(leftShift));
 	
-	abort; // step 3
+	exit type="template"; // step 2
 	
 	
 	// but lucee can convert a regular UDF to a java function as well, so you can do a simple UDF and pass it as well

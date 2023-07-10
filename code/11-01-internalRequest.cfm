@@ -10,7 +10,7 @@
         template:path
         , method:"post"
         , forms: {formkey:"Form Value"}  // or query string (thus allowing passing multiple values for the same key)
-        , urls: {urlkey:"URL Value"}  // or query string
+        , urls: {urlkey:"URL Value", layout:"none"}  // or query string
         , cookies: {cookiekey:"Cookie Value"}
         , headers: {headerkey:"Header Value","content-type":"text/plain"}
         , body: "Body send"
